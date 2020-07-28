@@ -28,8 +28,7 @@ def get_english_meaning(file, emoticon)
   data.each do |key, value|
   if value.include?(emoticon)
     return key
-  
-  end
+   end
     #else
       #return "not found"
   #end
