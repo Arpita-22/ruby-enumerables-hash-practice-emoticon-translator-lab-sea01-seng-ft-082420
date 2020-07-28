@@ -16,6 +16,7 @@ def get_japanese_emoticon(file, emoticon)
   data = load_library(file)
   #binding.pry
   data.each do |key,value|
+  value.each do 
   #if value.include?(emoticon)
   #return value
   #binding.pry
