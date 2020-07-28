@@ -20,7 +20,7 @@ def get_japanese_emoticon(file, emoticon)
       inner_value.each do |name|
   #data.each do |key,value|
   #value.each_value do |value| 
-  if value.include?(emoticon)
+  if name.include?(emoticon)
   return value
   end
   end
