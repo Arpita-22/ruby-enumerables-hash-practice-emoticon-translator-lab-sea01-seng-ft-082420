@@ -17,7 +17,7 @@ def get_japanese_emoticon(file, emoticon)
   #binding.pry
   data.each do |key, value|
   if value.include?(emoticon)
-  return data[value][1]
+  return data[key][1]
   end
 end
   #binding.pry
