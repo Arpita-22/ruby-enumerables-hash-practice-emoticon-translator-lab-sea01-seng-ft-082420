@@ -28,7 +28,7 @@ def get_english_meaning(file, emoticon)
   data = load_library(file)
   data.each do |key, value|
   if value.include?(emoticon)
-    return key
+    return data[key]
    end
     #else
       #return "not found"
