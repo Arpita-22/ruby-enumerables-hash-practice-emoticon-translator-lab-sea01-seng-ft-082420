@@ -18,10 +18,10 @@ def get_japanese_emoticon(file, emoticon)
   data.each do |key, value|
   if value.include?(emoticon)
   return value
-  binding.pry
+  #binding.pry
   end
 end
-  #binding.pry
+  binding.pry
  end
 
 def get_english_meaning(file, emoticon)
