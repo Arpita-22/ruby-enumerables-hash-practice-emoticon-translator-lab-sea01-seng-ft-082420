@@ -15,8 +15,11 @@ def get_japanese_emoticon(file, emoticon)
   # code goes here
   data = load_library(file)
   #binding.pry
-  data.each do |key,value|
-  value.each_value do |value| 
+  new_data = data.each_with_object({})do |(key,value),final_hash|
+    value.each do |inner_key,inner_value|
+      inner_value.each do |name|
+  #data.each do |key,value|
+  #value.each_value do |value| 
   if value.include?(emoticon)
   return value
   end
