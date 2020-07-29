@@ -24,6 +24,7 @@ def get_japanese_emoticon(file, emoticon)
   data.each do |key,value|
    value.each_value do |inner_value| 
      if inner_value == emoticon
+       binding.pry
        return key
     binding.pry
   #value.each_value do |value| 
