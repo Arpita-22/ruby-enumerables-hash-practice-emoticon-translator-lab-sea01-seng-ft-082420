@@ -33,8 +33,8 @@ def get_japanese_emoticon(file, emoticon)
   end
   end
   #end
-  new_data
-  binding.pry
+  #new_data
+  #binding.pry
  end
 
 def get_english_meaning(file, emoticon)
