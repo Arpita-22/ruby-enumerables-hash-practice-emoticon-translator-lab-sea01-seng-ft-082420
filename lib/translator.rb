@@ -22,10 +22,10 @@ def get_japanese_emoticon(file, emoticon)
       #binding.pry
         #binding.pry
   data.each do |key,value|
-   value.each_value do |inner_value| 
+   value.each do |inner_value| 
      if inner_value == emoticon
       # binding.pry
-       return key
+       return inner_key
   #value.each_value do |value| 
   #if name.include?(emoticon)
   #return final_hash[key]
