@@ -24,6 +24,8 @@ def get_japanese_emoticon(file, emoticon)
   return final_hash[key]
   end
   end
+  end
+  end
   #binding.pry
  end
 
