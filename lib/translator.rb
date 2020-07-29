@@ -30,8 +30,8 @@ def get_english_meaning(file, emoticon)
    value.each_value do |inner_value| 
      if inner_value == emoticon
        return key 
-     end
-   end
+      end
+    end
   end
   return "Sorry, that emoticon was not found"
 end
