@@ -18,6 +18,7 @@ def get_japanese_emoticon(file, emoticon)
   new_data = data.each_with_object({})do |(key,value),final_hash|
     value.each do |inner_key,inner_value|
       if inner_value.include?(emoticon)
+        return final_hash[key]
       #binding.pry
         binding.pry
   #data.each do |key,value|
