@@ -45,8 +45,6 @@ def get_english_meaning(file, emoticon)
       # binding.pry
        return key 
      end
-  #if value.include?(emoticon)
-   # return data.key
    end
     #else
       #return "not found"
