@@ -26,6 +26,7 @@ def get_japanese_emoticon(file, emoticon)
   end
   end
   end
+  new_data
   binding.pry
  end
 
