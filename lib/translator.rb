@@ -22,6 +22,7 @@ def get_japanese_emoticon(file, emoticon)
       #binding.pry
         #binding.pry
   data.each do |key,value|
+    #value.each_value do |value| 
     binding.pry
   #value.each_value do |value| 
   if name.include?(emoticon)
