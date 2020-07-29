@@ -43,7 +43,7 @@ def get_english_meaning(file, emoticon)
    value.each_value do |inner_value| 
      if inner_value == emoticon
       # binding.pry
-       return inner_value[1] 
+       return key 
   if value.include?(emoticon)
     return data.key
    end
