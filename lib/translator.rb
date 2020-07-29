@@ -14,27 +14,17 @@ end
 def get_japanese_emoticon(file, emoticon)
   # code goes here
   data = load_library(file)
-  #binding.pry
-  #new_data = data.each_with_object({})do |(key,value),final_hash|
-    #value.each do |inner_key,inner_value|
-      #if inner_value.include?(emoticon)
-        #return key
-      #binding.pry
-        #binding.pry
   data.each do |key,value|
    value.each_value do |inner_value| 
      if inner_value == emoticon
       # binding.pry
        return value[:japanese]
-  #value.each_value do |value| 
-  #if name.include?(emoticon)
-  #return final_hash[key]
-  end
-  end
+      end
+    end
   end
   #end
-  #new_data
   #binding.pry
+  return ""
  end
 
 def get_english_meaning(file, emoticon)
